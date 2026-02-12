@@ -3,158 +3,218 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Divya Kanaujiya | Data Scientist | Machine Learning Engineer</title>
-
-<meta name="description" content="Divya Kanaujiya - Data Science and Machine Learning Engineer from IIT Jodhpur. Skilled in Python, SQL, PyTorch, TensorFlow, and end-to-end ML pipelines.">
+<title>Divya Kanaujiya | Data Scientist</title>
 
 <style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #ffffff;
-    color: #333;
-    line-height: 1.6;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
 }
 
-.container {
-    width: 90%;
-    max-width: 1000px;
-    margin: auto;
-    padding: 40px 0;
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background:#f8f9fc;
+    color:#222;
 }
 
-header {
-    text-align: center;
-    padding: 40px 0;
-    border-bottom: 2px solid #eee;
+/* NAVBAR */
+nav{
+    position:fixed;
+    width:100%;
+    background:white;
+    padding:15px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 2px 10px rgba(0,0,0,0.05);
+    z-index:1000;
 }
 
-h1 {
-    margin: 0;
-    font-size: 32px;
+nav h2{
+    color:#2a5298;
 }
 
-h2 {
-    margin-top: 40px;
-    border-bottom: 2px solid #000;
-    padding-bottom: 8px;
+nav a{
+    text-decoration:none;
+    margin-left:20px;
+    color:#333;
+    font-weight:500;
 }
 
-a {
-    color: #000;
-    text-decoration: none;
-    font-weight: bold;
+nav a:hover{
+    color:#2a5298;
 }
 
-.button {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 20px;
-    background-color: black;
-    color: white;
-    border-radius: 5px;
+/* HERO SECTION */
+.hero{
+    height:100vh;
+    background:linear-gradient(135deg,#1e3c72,#2a5298);
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
 }
 
-.section {
-    margin-top: 20px;
+.hero h1{
+    font-size:40px;
+    margin-bottom:10px;
+    animation:fadeIn 1.5s ease-in-out;
 }
 
-.project {
-    margin-bottom: 20px;
+.hero p{
+    font-size:18px;
+    margin-bottom:20px;
+    opacity:0.9;
 }
 
-footer {
-    text-align: center;
-    margin-top: 50px;
-    padding-top: 20px;
-    border-top: 1px solid #ddd;
+.btn{
+    padding:12px 25px;
+    background:white;
+    color:#1e3c72;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:0.3s;
 }
+
+.btn:hover{
+    background:#ffd700;
+    transform:scale(1.05);
+}
+
+/* SECTION */
+section{
+    padding:80px 10%;
+}
+
+h2{
+    margin-bottom:30px;
+    text-align:center;
+    color:#1e3c72;
+}
+
+/* CARDS */
+.card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    margin-bottom:25px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* SKILLS GRID */
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#1e3c72;
+    color:white;
+}
+
+/* ANIMATION */
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+/* MOBILE */
+@media(max-width:768px){
+    nav{
+        flex-direction:column;
+    }
+    .hero h1{
+        font-size:28px;
+    }
+}
+
 </style>
 </head>
 
 <body>
 
-<div class="container">
+<nav>
+    <h2>Divya</h2>
+    <div>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
 
-<header>
+<div class="hero">
     <h1>Divya Kanaujiya</h1>
-    <p><strong>Data Scientist | Machine Learning Engineer | IIT Jodhpur</strong></p>
-    <p>Email: rojikanaujiya456@gmail.com | Phone: +91-6394400693</p>
-    <p>
-        <a href="https://github.com/yourusername">GitHub</a> |
-        <a href="https://linkedin.com/in/yourusername">LinkedIn</a>
-    </p>
-    <a href="Divya_Kanaujiya_CV.pdf" class="button" download>Download Resume</a>
-</header>
+    <p>Data Scientist | Machine Learning Engineer | IIT Jodhpur</p>
+    <a href="Divya_Kanaujiya_CV.pdf" class="btn" download>Download Resume</a>
+</div>
 
-<section>
-    <h2>Professional Summary</h2>
-    <div class="section">
-        <p>
-            M.Tech student in Data & Computational Science at IIT Jodhpur with strong expertise in Machine Learning,
-            Deep Learning, Statistical Modeling, and End-to-End ML pipeline development. Experienced in building
-            scalable ML models, performing feature engineering, and optimizing performance using evaluation metrics
-            such as F1-score, AUC, and Accuracy.
-        </p>
+<section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+        M.Tech student in Data & Computational Science at IIT Jodhpur with strong expertise in Machine Learning,
+        Deep Learning, Statistical Modeling, and end-to-end ML pipeline development.
     </div>
 </section>
 
-<section>
-    <h2>Technical Skills</h2>
-    <div class="section">
-        <p><strong>Programming:</strong> Python, SQL, R</p>
-        <p><strong>Machine Learning:</strong> Regression, Classification, Boosting, Feature Engineering, Model Evaluation</p>
-        <p><strong>Deep Learning:</strong> PyTorch, TensorFlow, CNNs, GANs</p>
-        <p><strong>Tools:</strong> Git, Docker, Linux, MongoDB, Flask</p>
-    </div>
-</section>
-
-<section>
+<section id="projects">
     <h2>Projects</h2>
 
-    <div class="project">
+    <div class="card">
         <h3>Sensor Anomaly Forecasting</h3>
-        <p>
-            Developed an end-to-end ML pipeline for time-series anomaly detection including data preprocessing,
-            feature engineering, model training, and evaluation. Achieved 89.6% accuracy improving detection reliability.
-        </p>
+        <p>Built end-to-end ML pipeline achieving 89.6% accuracy in time-series anomaly detection.</p>
     </div>
 
-    <div class="project">
+    <div class="card">
         <h3>Boosting Algorithms for Marketing Optimization</h3>
-        <p>
-            Implemented Gradient Boosting and AdaBoost models on imbalanced datasets. Optimized performance using
-            F1-score and AUC. Improved predictive performance through hyperparameter tuning.
-        </p>
+        <p>Implemented Gradient Boosting & AdaBoost models optimized using F1-score and AUC.</p>
     </div>
 
-    <div class="project">
+    <div class="card">
         <h3>Data-Free Knowledge Distillation using GANs</h3>
-        <p>
-            Built adversarial knowledge distillation framework achieving 72% accuracy on CIFAR-100.
-            Reduced student model size by 20% while retaining performance.
-        </p>
+        <p>Achieved 72% accuracy on CIFAR-100 and reduced model size by 20%.</p>
     </div>
-
 </section>
 
-<section>
-    <h2>Education</h2>
-    <p>M.Tech in Data & Computational Science – IIT Jodhpur (2024–2026)</p>
-    <p>M.Sc in Mathematics – IIT Jodhpur (2022–2024)</p>
+<section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="skills">
+        <div class="card">Python, SQL, R</div>
+        <div class="card">Machine Learning & Boosting</div>
+        <div class="card">PyTorch, TensorFlow, CNNs, GANs</div>
+        <div class="card">Git, Docker, Linux, MongoDB</div>
+    </div>
 </section>
 
-<section>
-    <h2>Achievements</h2>
-    <p>GATE 2024 Qualified</p>
-    <p>CampusX Data Science Mentorship Program</p>
+<section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+        Email: rojikanaujiya456@gmail.com <br>
+        Phone: +91-6394400693 <br>
+        GitHub | LinkedIn
+    </div>
 </section>
 
 <footer>
-    <p>© 2026 Divya Kanaujiya</p>
+    © 2026 Divya Kanaujiya | Designed Professionally
 </footer>
-
-</div>
 
 </body>
 </html>
